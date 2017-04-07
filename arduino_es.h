@@ -12,9 +12,10 @@ Version: 1.0.2
 #define ENTRADA 	1
 #define SALIDA	0
 
-void inicializarPin(int pin, char put);
+bool inicializarPin(unsigned int pin, char put);	//TODAVIA NO ESTAN IMPEMENTADOS LOS PINES ANALOGICOS
 
-/* Esta funcion se ingresa en el void setup, sirve para inicializar los pines como ENTRADA o SALIDA
+/* Esta funcion se ingresa en el void setup, sirve para inicializar los pines como ENTRADA o SALIDA. Devuelve una variable bool pos si se desea chequear
+que e pasaje de parametros fue correcto.
 Se utiliza de la siguiente manera.
 
 	{
@@ -22,16 +23,14 @@ Se utiliza de la siguiente manera.
 	inicializarPin(5, SALIDA);		 // Inicializo el pin 5 digital como una salida
 	...
 	}
-
-Si se quiere inicializar pines analogicos, como por ejemplo A0, A1, A2, etc. se le cambia el numero
-A0 = 14
-A1 = 15
 ...
 */
 
-void escribirDigital (int pin, char hl);
+bool escribirDigital (unsigned int pin, char hl);
 
-/* Esta funcion se la utiliza en el loop para encender o apagar pines digitales, se la utiliza de la siguiente manera:
+/* Esta funcion se la utiliza en el loop para encender o apagar pines digitales. Devuelve un boo por si se desea chequear que el pasaje de parametros haya
+sidop correcto.
+Se la utiliza de la siguiente manera:
 
 	{
 	...
@@ -40,10 +39,10 @@ void escribirDigital (int pin, char hl);
 	}
 */
 
-char leerDigital (int pin);
+bool leerDigital (int pin);
 
 /* Esta funcion sirve para leer el estado de pines digitales definidos como entrada anteriormente con la funcion
-inicializarPin.
+inicializarPin. devuelve un bool (true si esta encendido, false si esta apagado).
 Se la utiliza de la siguiente manera:
 
 	{
@@ -65,7 +64,7 @@ Se la utiliza de la siguiente manera:
 	}
 */
 
-int leerAnalogico (char pin);
+unsigned int leerAnalogico (char pin);
 
 /*Esta funcion sirve para leer los pines analogicos decalrados como entrada en la funcion InicializarPin().
 En esta ocacion los pines Analogicos no toman los valores mencionados anteriormente(14,15,16,etc)

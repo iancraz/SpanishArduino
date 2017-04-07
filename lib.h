@@ -7,8 +7,8 @@ Version: 1.0.2
 #ifndef LIB_H
 #define LIB_H
 
-#define VERDADERO	1
-#define FALSO		0
+#define VERDADERO	true
+#define FALSO		false
 #define ENCENDIDO	1	
 #define APAGADO 	0
 #define MAYOR 		>

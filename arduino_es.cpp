@@ -6,48 +6,72 @@ Version: 1.0.2
 #include "arduino_es.h"
 #include "Arduino.h"
 
-void inicializarPin(int pin, char put)
-{
-	if (put == ENTRADA)
+bool inicializarPin(unsigned int pin, char put)
+{	
+	bool error=true;
+	if (pin < 255)
 	{
-		pinMode(pin, INPUT);
+		switch(put) 
+		{
+			case ENTRADA:
+				pinMode(pin, INPUT);
+				error = false;
+				break;
+			case SALIDA:
+				pinMode(pin, OUTPUT);
+				error=false;
+				break;
+		}
 	}
-	else if (put == SALIDA)
-	{
-		pinMode(pin, OUTPUT);
-	}
-	return;
+	return error;
 }
 
-void escribirDigital (int pin, char hl)
+bool escribirDigital (unsigned int pin, char hl)
 {
-	if (hl == ENCENDER)
+	bool error = true;
+	if(pin <255)
 	{
-		digitalWrite(pin, HIGH);
+		switch(hl)
+		{
+			case ENCENDER:
+				digitalWrite(pin, HIGH);
+				error=false;
+				break;
+			case APAGAR:
+				digitalWrite(pin, LOW);
+				error=false;
+				break;
+		}
 	}
-	else if (hl == APAGAR)
-	{
-		digitalWrite(pin, LOW);
-	}
-	return;
+	return error;
 }
 
-char leerDigital (int pin)
+bool leerDigital (int pin)
 {
-	char answer;
-	answer = digitalRead(pin);
+	bool answer = false;
+	char temp;
+	temp = digitalRead(pin);
+	switch(temp)
+	{
+		case HIGH:
+			answer = true;
+			break;
+		case LOW:
+			answer = false;
+			break;
+	}
 	return answer;
 }
 
-void tempo (int cantidad)
+void tempo (unsigned int cantidad)
 {
 	delay(cantidad);
 	return;
 }
 
-int leerAnalogico (char pin)
+unsigned int leerAnalogico (char pin)
 {
-	int answer;
+	unsigned int answer;
 	answer = analogRead(pin);
 	return answer;
 }
