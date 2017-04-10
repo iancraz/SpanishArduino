@@ -7,16 +7,16 @@ Version: 1.0.2
 #ifndef LIB_H
 #define LIB_H
 
-#define VERDADERO	true
-#define FALSO		false
-#define ENCENDIDO	1	
-#define APAGADO 	0
-#define MAYOR 		>
-#define MENOR 		<
-#define IGUAL 		==
-#define DISTINTO	!=
-#define _Y_			&&
-#define _O_			||
+#define verdadero	true
+#define falso		false
+#define encendido	1	
+#define apagado		0
+#define mayor 		>
+#define menor 		<
+#define igual 		==
+#define distinto	!=
+#define y_			&&
+#define o_			||
 
 
 #endif	//LIB_H

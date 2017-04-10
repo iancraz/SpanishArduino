@@ -6,6 +6,8 @@ Version: 1.0.2
 #include "arduino_es.h"
 #include "Arduino.h"
 
+
+
 bool inicializarPin(unsigned int pin, char put)
 {	
 	bool error=true;
@@ -13,11 +15,11 @@ bool inicializarPin(unsigned int pin, char put)
 	{
 		switch(put) 
 		{
-			case ENTRADA:
+			case entrada:
 				pinMode(pin, INPUT);
 				error = false;
 				break;
-			case SALIDA:
+			case salida:
 				pinMode(pin, OUTPUT);
 				error=false;
 				break;
@@ -33,11 +35,11 @@ bool escribirDigital (unsigned int pin, char hl)
 	{
 		switch(hl)
 		{
-			case ENCENDER:
+			case encender:
 				digitalWrite(pin, HIGH);
 				error=false;
 				break;
-			case APAGAR:
+			case apagar:
 				digitalWrite(pin, LOW);
 				error=false;
 				break;

@@ -7,20 +7,20 @@ Version: 1.0.2
 #ifndef LIBRERIA_H
 #define LIBRERIA_H
 
-#define ENCENDER	1
-#define APAGAR		0
-#define ENTRADA 	1
-#define SALIDA	0
+#define encender	1
+#define apagar		0
+#define entrada 	1
+#define salida		0
 
 bool inicializarPin(unsigned int pin, char put);	//TODAVIA NO ESTAN IMPEMENTADOS LOS PINES ANALOGICOS
 
-/* Esta funcion se ingresa en el void setup, sirve para inicializar los pines como ENTRADA o SALIDA. Devuelve una variable bool pos si se desea chequear
+/* Esta funcion se ingresa en el void setup, sirve para inicializar los pines como "entrada" o "salida". Devuelve una variable bool pos si se desea chequear
 que e pasaje de parametros fue correcto.
 Se utiliza de la siguiente manera.
 
 	{
 	...
-	inicializarPin(5, SALIDA);		 // Inicializo el pin 5 digital como una salida
+	inicializarPin(5, salida);		 // Inicializo el pin 5 digital como una salida
 	...
 	}
 ...
@@ -34,7 +34,7 @@ Se la utiliza de la siguiente manera:
 
 	{
 	...
-	escribirDigital(5, ENCENDER);		//Enciendo el pin 5
+	escribirDigital(5, encender);		//Enciendo el pin 5
 	...
 	}
 */
@@ -53,7 +53,7 @@ Se la utiliza de la siguiente manera:
 	}
 */
 
-void tempo (int cantidad);
+void tempo (unsigned int cantidad);
 
 /*Esta funcion sirve para detener el loop en milisegundos, se la utiliza como timer o temporizador.
 Se la utiliza de la siguiente manera:
