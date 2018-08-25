@@ -1,7 +1,21 @@
-/*Libreria para programar en español en C y C++.
-Creada por Ian Diaz en Enero del 2017
+/*
+SpanishArduino is a library to learn programming on Arduino without knowing english
+Copyright (C) 2018  Ian Cruz Diaz
 
-Version: 1.0.2
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+Version: 1.0.3
 */
 
 #ifndef ES_H
@@ -47,7 +61,7 @@ Ejemplo:
 
 */
 #define otro		else
-/* Directiva de flujo de programa, es como un o_si pero sin condicion, es decir si no se cumplen los "si" puestos anteriormente, se va a 
+/* Directiva de flujo de programa, es como un o_si pero sin condicion, es decir si no se cumplen los "si" puestos anteriormente, se va a
 ejecutar este codigo
 Ejemplo:
 	{
@@ -57,7 +71,7 @@ Ejemplo:
 		}				//En el caso de que x no sea menor a 10, chequea si es mayor a 10 y menor a 20, si es asi le asigna 20.
 		o_si((x>10)&&(x<20))
 		{
-			x = 20;		
+			x = 20;
 		}
 		otro			//Si x no cumple ninguna de las condiciones anteriores, se ejecuta este codigo, que asigna 100 de valor a x
 		{
@@ -96,7 +110,7 @@ Lo que va dentro de os parentesis de caso(), debe ser obligatoriamente una const
 /*Directiva de flujo de programa, es una modificacion avanzada para ciertos tipos de mietras()
 Ejemplo:
 	{
-		para(x=0, x<100, x++) 	//Lo que hace este codigo es inicializar la variable x en 0, y chequea si esta es menor a 100, si es asi la 
+		para(x=0, x<100, x++) 	//Lo que hace este codigo es inicializar la variable x en 0, y chequea si esta es menor a 100, si es asi la
 		{}						//incremente en 1, y vueve a chequear hasta que esta variable sea mayor a 100
 	}							//Notese que entre as llaves no puse ningun codigo pero tranquilamente puede haber cualquier tipo de codigo.
 
@@ -106,13 +120,13 @@ Ejemplo:
 typedef int entero;				//Se refiere a variables de tipo entero, generalmente estas ocupan entre 4 bytes y 8 bytes, y su rango de valores
 								//varia entre 0 y 65000 aprox si es nosignado.
 
-typedef char caracter;			//Variable de tipo caracter ocupa un byte, y su rango de valores varia entre 0 y 255 si es nosignado.		
+typedef char caracter;			//Variable de tipo caracter ocupa un byte, y su rango de valores varia entre 0 y 255 si es nosignado.
 
 typedef void nada;
 
 typedef	long int l_entero;		//Es una variable larga entera, se la utiliza por si el rango de valores de las variables entero no alcanza.
 
-typedef float flotante;			
+typedef float flotante;
 typedef double doblef;
 typedef long double l_doblef;
 typedef unsigned int entero_no;

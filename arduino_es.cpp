@@ -1,7 +1,21 @@
-/*Libreria para programar en arduino con idioma español
-Escrita por Ian Diaz en Enero del 2017
+/*
+SpanishArduino is a library to learn programming on Arduino without knowing english
+Copyright (C) 2018  Ian Cruz Diaz
 
-Version: 1.0.2
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+Version: 1.0.3
 */
 #include "arduino_es.h"
 #include "Arduino.h"
@@ -9,11 +23,11 @@ Version: 1.0.2
 
 
 bool inicializarPin(unsigned int pin, char put)
-{	
+{
 	bool error=true;
 	if (pin < 255)
 	{
-		switch(put) 
+		switch(put)
 		{
 			case entrada:
 				pinMode(pin, INPUT);
@@ -83,6 +97,3 @@ void escribirAnalogico (char pin, int value)
 	analogWrite(pin, value);
 	return;
 }
-
-
-

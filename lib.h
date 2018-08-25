@@ -1,7 +1,21 @@
-/*Libreria con defines utiles para que el programa sea mas entendible a la vista
-Creada por Ian Diaz en Enero 2017
+/*
+SpanishArduino is a library to learn programming on Arduino without knowing english
+Copyright (C) 2018  Ian Cruz Diaz
 
-Version: 1.0.2
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+Version: 1.0.3
 */
 
 #ifndef LIB_H
@@ -9,7 +23,7 @@ Version: 1.0.2
 
 #define verdadero	true
 #define falso		false
-#define encendido	1	
+#define encendido	1
 #define apagado		0
 #define mayor 		>
 #define menor 		<
