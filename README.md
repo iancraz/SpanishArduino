@@ -11,11 +11,10 @@ paso que se debe hacer para poder escribir un codigo en español y poder correrl
 
 ### 1: Inclusión de archivos
 
-Antes que nada, se necesita descargar este repositorio, y poner la carpeta SpanishArduino, dentro de la carpeta del
-proyecto de arduino. Para poder incluir los archivos necesarios para comenzar, solo se necesita escribir al comienzo
+Antes que nada, se necesita descargar este repositorio, y poner todos los archivos que se encuentran dentro de la carpeta SpanishArduino, dentro de la carpeta del proyecto de arduino. Para poder incluir los archivos necesarios para comenzar, solo se necesita escribir al comienzo
 del proyecto:
 ```
-#include "./SpanishArduino/SpanishArduino.h"
+#include "SpanishArduino.h"
 ```
 Una vez hecho esto, ya se esta listo para empezar a programar en español.
 
