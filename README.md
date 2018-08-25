@@ -216,4 +216,56 @@ Se la utiliza de la siguiente manera:
 }
 ```
 
-SEGUIR...
+#### 3.5: Lectura de pines analógicos
+
+Esta funcion sirve para leer los pines analogicos decalrados como entrada en la funcion InicializarPin(). En esta ocasion los pines Analogicos no toman los valores mencionados anteriormente(14,15,16,etc), ahora los valores para ingresar en esta funcion son:
+A0 = 0
+A1 = 1
+A2 = 2
+etc...
+
+Esta función devuelve valores entre 0 y 1023!
+
+Se la utiliza de la suguiente manera:
+
+```
+{
+    ...
+    x = leerAnalogico(0); 	//Asigno a la variable x el valor leido del pin A0.
+    ...
+}
+```
+
+#### 3.6: Escritura de pines analógicos
+
+Funcion que sirve justamente para escribir los pines analogicos. A diferencia de la funcion analogico que devuelve entre 0 y 1023, esta funcion se la puede llamar con valores desde 0 a 255
+Se la utiliza de la siguiente manera:
+
+```
+{
+    ...
+    escribirAnalogico(3, 255); 		//Esribo en el pin A3, el valor de 255, es decir, encendido completamente.
+    ...
+}
+```
+
+#### Aclaraciones
+
+En los pines analógicos, los valores máximos corresponden a 5v y los mínimos a 0v, es decir, que si al escribir un pin analógico, le mando un valor de 150
+
+```
+{
+    ...
+    escribirAnalogico(3, 150);
+    ...
+}
+```
+
+Lo que sucede en el arduino, es que la tensión de salida del pin A3 sea (5/255) * 150 = 2.9 (Volts).
+Equivalentemente, si en la funcion de lectura de pines analógicos leemos un valor de 1023, eso significa 5v, y si leemos 511, significa que estamos leyendo 2.5v.
+
+
+
+
+
+Esta librería está en desarrollo, por lo tanto, se van a ir agregando nuevas funciones y librerias internas para poder manejar diferentes dispositivos.
