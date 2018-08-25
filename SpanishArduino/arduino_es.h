@@ -653,9 +653,9 @@ Version:    1.0.3
 
 bool inicializarPin(unsigned int pin, char put);
 
-/* Esta funcion se ingresa en el void setup, sirve para inicializar los pines como "entrada" o "salida". Devuelve una variable bool pos si se desea chequear
-que e pasaje de parametros fue correcto.
-Se utiliza de la siguiente manera.
+/* Esta funcion se ingresa en el void setup, sirve para inicializar los pines como "entrada" o "salida". Devuelve una variable bool por si se desea chequear
+que el pasaje de parametros fue correcto.
+Se utiliza de la siguiente manera:
 
 	{
 	...
@@ -667,8 +667,8 @@ Se utiliza de la siguiente manera.
 
 bool escribirDigital (unsigned int pin, char hl);
 
-/* Esta funcion se la utiliza en el loop para encender o apagar pines digitales. Devuelve un boo por si se desea chequear que el pasaje de parametros haya
-sidop correcto.
+/* Esta funcion se la utiliza en el loop para encender o apagar pines digitales. Devuelve un bool por si se desea chequear que el pasaje de parametros haya
+sido correcto.
 Se la utiliza de la siguiente manera:
 
 	{

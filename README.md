@@ -18,7 +18,7 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 Contacto:   idiaz@itba.edu.ar
-## Libreria para empezar a escribir codigo en castellano para arduino
+# Libreria para empezar a escribir codigo en castellano para arduino
 
 Este repositorio sirve como guía para empezar a escribir codigo en arduino sin la necesidad de
 saber el idioma inglés.
@@ -155,3 +155,65 @@ mientras(x<100)
     x++;
 }
 ```
+
+### 3: Programación en Arduino
+
+ Durante esta sección se intentará explicar como programar funciones basicas de arduino en castellano.
+
+#### 3.1: Inicialización de pines
+
+Esta funcion se ingresa en el void setup, sirve para inicializar los pines como "entrada" o "salida". Devuelve
+una variable bool por si se desea chequear que el pasaje de parametros fue correcto.
+Se utiliza de la siguiente manera:
+
+```
+{
+    ...
+    inicializarPin(5, salida);		 // Inicializo el pin 5 digital como una salida
+    inicializarPin(5, entrada);		 // Inicializo el pin 6 digital como una entrada
+    ...
+}
+```
+
+#### 3.2: Escritura de pines digitales
+
+Esta funcion se la utiliza en el loop para encender o apagar pines digitales. Devuelve un bool por si se desea
+chequear que el pasaje de parametros haya sido correcto.
+Se la utiliza de la siguiente manera:
+
+```
+{
+    ...
+    escribirDigital(5, encender);		   //Enciendo el pin 5
+    escribirDigital(5, apagar);		       //Apago el pin 5
+    ...
+}
+```
+
+#### 3.3: Lectura de pines digitales
+
+Esta funcion sirve para leer el estado de pines digitales definidos como entrada anteriormente con la funcion inicializarPin. devuelve un bool (true si esta encendido, false si esta apagado).
+Se la utiliza de la siguiente manera:
+
+```
+{
+    ...
+    x = leerDigital(6);		//Asigno a la variable "x" el valor 1 o 0 dependiendo del estado del pin.(1 es encendido, 0 es apagado)
+    ...
+}
+```
+
+#### 3.4: Temporizador
+
+Esta funcion sirve para detener el flujo del programa durante ciertos milisegundos, se la utiliza como timer o temporizador.
+Se la utiliza de la siguiente manera:
+
+```
+{
+    ...
+    tempo(1000);		//Detengo el programa por 1000 milisegundos
+    ...
+}
+```
+
+SEGUIR...
