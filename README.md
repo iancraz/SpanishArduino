@@ -26,7 +26,7 @@ El repositorio todavía está en desarrollo!
 
 ## Como utilizarlo
 
-Escencialmente son 3 los archivos que hay que incluir al proyecto que se desea crear, aquí se describirá paso a
+Escencialmente es un solo archivo el que hay que incluir al proyecto que se desea crear, aquí se describirá paso a
 paso que se debe hacer para poder escribir un codigo en español y poder correrlo en un arduino.
 
 ### 1: Inclusión de archivos
@@ -39,4 +39,119 @@ del proyecto:
 ```
 Una vez hecho esto, ya se esta listo para empezar a programar en español.
 
-SEGUIR...
+### 2: Conceptos Básicos de programación en castellano
+
+Para poder programar en castellano, es necesario explicar como se desarrolla el código.
+
+#### 2.1: Directiva "mientras()"
+
+Es una directiva de flujo de programa, mientras suceda cierta condicion se va a ejecutar cierto codigo
+Ejemplo:
+
+```
+mientras(condición)
+{
+    instrucción;
+}
+```
+En el ejemplo anterior, mientras que en el programa se cumpla la "condición", se va a ejecutar la instrucción.
+
+#### 2.2: Directiva "si()"
+
+Es una directiva de flujo de programa, si sucede cierta condicion se va a ejecutar cierto codigo(La diferencia con mientras es que el chequeo de la condicion solo lo va a hacer una vez)
+
+Ejemplo:
+
+```
+si(condición)
+{
+    instrucción;
+}
+```
+
+En este ejemplo, el programa va a verificar si se cumple la "condición", y en caso de que se cumpla, ejecuta la instrucción, caso
+contrario, no la ejecuta. Cabe aclarar, que si se cumple la condición, la intrucción se ejecutará solo 1 vez, diferente al bloque "mientras()" que ejecuta la instrucción hasta que la condición no se cumpla.
+
+#### 2.3: Directiva "o_si()"
+
+Sirve para concatenar cadenas de "si()"
+
+Ejemplo:
+
+```
+si(condición1)
+{
+    instrucción1;
+}
+o_si(condición2)
+{
+    instrucción2;
+}
+```
+En este ejemplo, si la condicion1 se cumple, se ejecutara la intruccion1. Si la condicion1 no se cumple, pero la condicion2
+si se cumple, se ejecutara la instruccion2. Si ninguna de las 2 instrucciones se cumplen, no se ejecutara ninguna instruccion.
+
+#### 2.4: Directiva "otro"
+
+Se comporta como un "o_si()" pero sin condicion, es decir si no se cumplen los "si" puestos anteriormente, se va a
+ejecutar este codigo.
+
+Ejemplo:
+
+```
+si(condición1)
+{
+    instrucción1;
+}
+otro
+{
+    instrucción2;
+}
+```
+
+En este ejemplo, si la condicion1 se cumple, se ejecutara la intruccion1. Si la condicion1 no se cumple,  se ejecutara la instruccion2.
+
+#### 2.5: Directiva "Chequeo()/Caso()"
+
+Se utiliza para verificar valores de variables.
+
+Ejemplo:
+
+```
+chequeo(x)
+{
+    caso(1):
+        Instruccion1;
+        volver;
+    caso(2):
+        Instruccion2;
+        volver;
+    default:
+        Instruccion3;
+        volver;
+}
+```
+Lo que hace este codigo es chequear el valor de x, y si x es 1, ejecuta la instruccion1, si x es 2 ejecuta la intrucion2 y si no es ninguno de esos 2 valores, ejecuta la intruccion3.
+
+#### 2.6: Directiva "para()"
+
+Es una modificacion avanzada para ciertos tipos de mientras()
+Ejemplo:
+
+```
+para(x=0, x<100, x++)
+{
+    Instruccion;
+}		
+```
+
+Hacer ese código, es equivalente a hacer
+
+```
+x=0;
+mientras(x<100)
+{
+    instruccion;
+    x++;
+}
+```

@@ -118,7 +118,9 @@ Ejemplo:
 	}							//Notese que entre as llaves no puse ningun codigo pero tranquilamente puede haber cualquier tipo de codigo.
 
 */
-#define devover(x)	return (x)
+#define devolver(x)	return (x)
+
+#define volver  break
 
 typedef int entero;				//Se refiere a variables de tipo entero, generalmente estas ocupan entre 4 bytes y 8 bytes, y su rango de valores
 								//varia entre 0 y 65000 aprox si es nosignado.
