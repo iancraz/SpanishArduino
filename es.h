@@ -1,4 +1,6 @@
 /*
+This file is part of SpanishArduino.
+
 SpanishArduino is a library to learn programming on Arduino without knowing english
 Copyright (C) 2018  Ian Cruz Diaz
 
