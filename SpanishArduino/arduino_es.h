@@ -637,11 +637,14 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+Contacto:   idiaz@itba.edu.ar
 Version:    1.0.3
 */
 
 #ifndef LIBRERIA_H
 #define LIBRERIA_H
+#include "./es.h"
+#include "./lib.h"
 
 #define encender	1
 #define apagar		0
