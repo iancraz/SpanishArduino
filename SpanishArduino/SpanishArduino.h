@@ -641,8 +641,8 @@ Contacto:   idiaz@itba.edu.ar
 Version:    1.0.3
 */
 
-#ifndef LIBRERIA_H
-#define LIBRERIA_H
+#ifndef SPANISHARDUINO_H
+#define SPANISHARDUINO_H
 #include "./es.h"
 #include "./lib.h"
 

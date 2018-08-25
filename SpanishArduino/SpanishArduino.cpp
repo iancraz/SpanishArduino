@@ -20,7 +20,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 Contacto:   idiaz@itba.edu.ar
 Version: 1.0.3
 */
-#include "arduino_es.h"
+#include "SpanishArduino.h"
 #include "Arduino.h"
 
 
