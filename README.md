@@ -9,14 +9,22 @@ El repositorio todavía está en desarrollo!
 Escencialmente es un solo archivo el que hay que incluir al proyecto que se desea crear, aquí se describirá paso a
 paso que se debe hacer para poder escribir un codigo en español y poder correrlo en un arduino.
 
+## Indice
+    1. Inclusión de archivos
+    2. Conceptos basicos de la programación en castellano
+    3. Programación en arduino
+---
+
 ### 1: Inclusión de archivos
 
 Antes que nada, se necesita descargar este repositorio, y poner todos los archivos que se encuentran dentro de la carpeta SpanishArduino, dentro de la carpeta del proyecto de arduino. Para poder incluir los archivos necesarios para comenzar, solo se necesita escribir al comienzo
 del proyecto:
-```
+```cpp
 #include "SpanishArduino.h"
 ```
 Una vez hecho esto, ya se esta listo para empezar a programar en español.
+
+---
 
 ### 2: Conceptos Básicos de programación en castellano
 
@@ -27,7 +35,7 @@ Para poder programar en castellano, es necesario explicar como se desarrolla el 
 Es una directiva de flujo de programa, mientras suceda cierta condicion se va a ejecutar cierto codigo
 Ejemplo:
 
-```
+```cpp
 mientras(condición)
 {
     instrucción;
@@ -41,7 +49,7 @@ Es una directiva de flujo de programa, si sucede cierta condicion se va a ejecut
 
 Ejemplo:
 
-```
+```cpp
 si(condición)
 {
     instrucción;
@@ -57,7 +65,7 @@ Sirve para concatenar cadenas de "si()"
 
 Ejemplo:
 
-```
+```cpp
 si(condición1)
 {
     instrucción1;
@@ -77,7 +85,7 @@ ejecutar este codigo.
 
 Ejemplo:
 
-```
+```cpp
 si(condición1)
 {
     instrucción1;
@@ -96,7 +104,7 @@ Se utiliza para verificar valores de variables.
 
 Ejemplo:
 
-```
+```cpp
 chequeo(x)
 {
     caso(1):
@@ -117,7 +125,7 @@ Lo que hace este codigo es chequear el valor de x, y si x es 1, ejecuta la instr
 Es una modificacion avanzada para ciertos tipos de mientras()
 Ejemplo:
 
-```
+```cpp
 para(x=0, x<100, x++)
 {
     Instruccion;
@@ -126,7 +134,7 @@ para(x=0, x<100, x++)
 
 Hacer ese código, es equivalente a hacer
 
-```
+```cpp
 x=0;
 mientras(x<100)
 {
@@ -134,6 +142,7 @@ mientras(x<100)
     x++;
 }
 ```
+---
 
 ### 3: Programación en Arduino
 
@@ -145,7 +154,7 @@ Esta funcion se ingresa en el void setup, sirve para inicializar los pines como 
 una variable bool por si se desea chequear que el pasaje de parametros fue correcto.
 Se utiliza de la siguiente manera:
 
-```
+```cpp
 {
     ...
     inicializarPin(5, salida);		 // Inicializo el pin 5 digital como una salida
@@ -160,7 +169,7 @@ Esta funcion se la utiliza en el loop para encender o apagar pines digitales. De
 chequear que el pasaje de parametros haya sido correcto.
 Se la utiliza de la siguiente manera:
 
-```
+```cpp
 {
     ...
     escribirDigital(5, encender);		   //Enciendo el pin 5
@@ -174,7 +183,7 @@ Se la utiliza de la siguiente manera:
 Esta funcion sirve para leer el estado de pines digitales definidos como entrada anteriormente con la funcion inicializarPin. devuelve un bool (true si esta encendido, false si esta apagado).
 Se la utiliza de la siguiente manera:
 
-```
+```cpp
 {
     ...
     x = leerDigital(6);		//Asigno a la variable "x" el valor 1 o 0 dependiendo del estado del pin.(1 es encendido, 0 es apagado)
@@ -187,7 +196,7 @@ Se la utiliza de la siguiente manera:
 Esta funcion sirve para detener el flujo del programa durante ciertos milisegundos, se la utiliza como timer o temporizador.
 Se la utiliza de la siguiente manera:
 
-```
+```cpp
 {
     ...
     tempo(1000);		//Detengo el programa por 1000 milisegundos
@@ -207,7 +216,7 @@ Esta función devuelve valores entre 0 y 1023!
 
 Se la utiliza de la suguiente manera:
 
-```
+```cpp
 {
     ...
     x = leerAnalogico(0); 	//Asigno a la variable x el valor leido del pin A0.
@@ -220,7 +229,7 @@ Se la utiliza de la suguiente manera:
 Funcion que sirve justamente para escribir los pines analogicos. A diferencia de la funcion analogico que devuelve entre 0 y 1023, esta funcion se la puede llamar con valores desde 0 a 255
 Se la utiliza de la siguiente manera:
 
-```
+```cpp
 {
     ...
     escribirAnalogico(3, 255); 		//Esribo en el pin A3, el valor de 255, es decir, encendido completamente.
@@ -232,7 +241,7 @@ Se la utiliza de la siguiente manera:
 
 En los pines analógicos, los valores máximos corresponden a 5v y los mínimos a 0v, es decir, que si al escribir un pin analógico, le mando un valor de 150
 
-```
+```cpp
 {
     ...
     escribirAnalogico(3, 150);
@@ -254,6 +263,7 @@ Esta librería está en desarrollo, por lo tanto, se van a ir agregando nuevas f
 Library to start writing code in Spanish.
 
 SpanishArduino is a library to learn programming on Arduino without knowing english.
+
 Copyright (C) 2018  Ian Cruz Diaz
 
 This program is free software: you can redistribute it and/or modify
