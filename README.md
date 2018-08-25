@@ -1,4 +1,5 @@
-# SpanishArduino: Libreria para empezar a escribir codigo en castellano para arduino
+# SpanishArduino
+## Libreria para empezar a escribir codigo en castellano para arduino
 
 Este repositorio sirve como guía para empezar a escribir codigo en arduino sin la necesidad de
 saber el idioma inglés.
