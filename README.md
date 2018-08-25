@@ -1,14 +1,14 @@
 # SpanishArduino
 Library to start writing code in spanish.
-Libreria para empezar a escribir codigo en espa�ol para arduino
+### Libreria para empezar a escribir codigo en espa�ol para arduino
 
-En esta carpeta se encuentran varios archivos, los siguientes archivos no se deben incluir en el proyecto real de
-Arduino, son solo para pruebas y debugueo:
-	-Test.cpp
-	-Arduino.h
-	-Arduino.cpp
+Este repositorio sirve como guía para empezar a escribir codigo en arduino sin la necesidad de
+saber el idioma inglés.
+El repositorio todavía está en desarrollo!
 
-Recordar que esos archivos NO se deben incluir.
+## Como utilizarlo
 
-Para poder ver como se programa en espa�ol se pueden ver los Archivos arduino_es.h, es.h y lib.h, donde se encuentran las funciones y 
-estan explicadas una por una como se las debe utilizar.
+Escencialmente son 3 los archivos que hay que incluir al proyecto que se desea crear, aquí se describirá paso a
+paso que se debe hacer para poder escribir un codigo en español y poder correrlo en un arduino.
+
+SEGUIR...
