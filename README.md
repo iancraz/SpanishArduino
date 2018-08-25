@@ -18,7 +18,7 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 Contacto:   idiaz@itba.edu.ar
-### Libreria para empezar a escribir codigo en castellano para arduino
+## Libreria para empezar a escribir codigo en castellano para arduino
 
 Este repositorio sirve como guía para empezar a escribir codigo en arduino sin la necesidad de
 saber el idioma inglés.
@@ -36,7 +36,6 @@ proyecto de arduino. Para poder incluir los archivos necesarios para comenzar, s
 del proyecto:
 ```
 #include "./SpanishArduino/SpanishArduino.h"
-
 ```
 Una vez hecho esto, ya se esta listo para empezar a programar en español.
 
