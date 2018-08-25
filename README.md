@@ -258,6 +258,8 @@ Equivalentemente, si en la funcion de lectura de pines analógicos leemos un val
 
 Esta librería está en desarrollo, por lo tanto, se van a ir agregando nuevas funciones y librerias internas para poder manejar diferentes dispositivos.
 
+---
+
 ### Licencia GPL v3
 
 Library to start writing code in Spanish.
@@ -279,4 +281,4 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-Contacto:   idiaz@itba.edu.ar
+**Contacto:**   idiaz@itba.edu.ar
