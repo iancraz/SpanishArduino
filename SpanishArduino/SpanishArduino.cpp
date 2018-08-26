@@ -100,3 +100,11 @@ void escribirAnalogico (char pin, int value)
 	analogWrite(pin, value);
 	return;
 }
+
+//NUEVASS
+
+void tempoMicroseg(unsigned int cantidad)
+{
+	delayMicroseconds(cantidad);
+	return;
+}
