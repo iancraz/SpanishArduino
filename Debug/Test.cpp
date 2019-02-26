@@ -13,10 +13,10 @@ void loop()
 {
 	mientras(leerDigital(5) distinto encendido)
 	{
-		escribirDigital(3, apagar);
-		tempo(1000);
-		escribirDigital(3, encender);
-		tempo(1000);
+		escribirPinDigital(3, apagar);
+		temporizador(1000);
+		escribirPinDigital(3, encender);
+		temporizador(1000);
 	}
 }
 

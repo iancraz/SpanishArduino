@@ -665,7 +665,7 @@ Se utiliza de la siguiente manera:
 ...
 */
 
-bool escribirDigital (unsigned int pin, char hl);
+bool escribirPinDigital (unsigned int pin, char hl);
 
 /* Esta funcion se la utiliza en el loop para encender o apagar pines digitales. Devuelve un bool por si se desea chequear que el pasaje de parametros haya
 sido correcto.
@@ -678,7 +678,7 @@ Se la utiliza de la siguiente manera:
 	}
 */
 
-bool leerDigital (int pin);
+bool leerPinDigital (int pin);
 
 /* Esta funcion sirve para leer el estado de pines digitales definidos como entrada anteriormente con la funcion
 inicializarPin. devuelve un bool (true si esta encendido, false si esta apagado).
@@ -692,7 +692,7 @@ Se la utiliza de la siguiente manera:
 	}
 */
 
-void tempo (unsigned int cantidad);
+void temporizador (unsigned int cantidad);
 
 /*Esta funcion sirve para detener el loop en milisegundos, se la utiliza como timer o temporizador.
 Se la utiliza de la siguiente manera:
@@ -703,7 +703,17 @@ Se la utiliza de la siguiente manera:
 	}
 */
 
-unsigned int leerAnalogico (char pin);
+void temporizadorMicroseg(unsigned int cantidad);
+/*Esta funcion sirve para detener el loop en microsegundos, se la utiliza como timer o temporizador.
+Se la utiliza de la siguiente manera:
+	{
+	...
+	tempo(10000);		//Detengo el programa por 10000 microsegundos
+	...
+	}
+*/
+
+unsigned int leerPinAnalogico (char pin);
 
 /*Esta funcion sirve para leer los pines analogicos decalrados como entrada en la funcion InicializarPin().
 En esta ocacion los pines Analogicos no toman los valores mencionados anteriormente(14,15,16,etc)
@@ -724,7 +734,7 @@ Se la utiliza de la suguiente manera:
 	}
 */
 
-void escribirAnalogico (char pin, int value);
+void escribirPinAnalogico (char pin, int value);
 
 /*Funcion que sirve justamente para escribir los pines analogicos.
 A diferencia de la funcion analogico que devuelve entre 0 y 1023, esta funcion se la puede llamar con valores desde 0 a 255
@@ -735,5 +745,6 @@ Se la utiliza de la siguiente manera:
 	...
 	}
 */
+
 
 #endif

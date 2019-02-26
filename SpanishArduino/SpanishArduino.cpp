@@ -45,7 +45,7 @@ bool inicializarPin(unsigned int pin, char put)
 	return error;
 }
 
-bool escribirDigital (unsigned int pin, char hl)
+bool escribirPinDigital (unsigned int pin, char hl)
 {
 	bool error = true;
 	if(pin <255)
@@ -65,7 +65,7 @@ bool escribirDigital (unsigned int pin, char hl)
 	return error;
 }
 
-bool leerDigital (int pin)
+bool leerPinDigital (int pin)
 {
 	bool answer = false;
 	char temp;
@@ -82,20 +82,20 @@ bool leerDigital (int pin)
 	return answer;
 }
 
-void tempo (unsigned int cantidad)
+void temporizador (unsigned int cantidad)
 {
 	delay(cantidad);
 	return;
 }
 
-unsigned int leerAnalogico (char pin)
+unsigned int leerPinAnalogico (char pin)
 {
 	unsigned int answer;
 	answer = analogRead(pin);
 	return answer;
 }
 
-void escribirAnalogico (char pin, int value)
+void escribirPinAnalogico (char pin, int value)
 {
 	analogWrite(pin, value);
 	return;
@@ -103,7 +103,7 @@ void escribirAnalogico (char pin, int value)
 
 //NUEVASS
 
-void tempoMicroseg(unsigned int cantidad)
+void temporizadorMicroseg(unsigned int cantidad)
 {
 	delayMicroseconds(cantidad);
 	return;
