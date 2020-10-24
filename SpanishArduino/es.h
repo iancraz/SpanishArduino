@@ -122,20 +122,33 @@ Ejemplo:
 
 #define volver  break
 
-typedef int entero;				//Se refiere a variables de tipo entero, generalmente estas ocupan entre 4 bytes y 8 bytes, y su rango de valores
+#define entero		int
+#define caracter 	char
+#define nada		void
+#define largo		long
+#define flotante	float
+#define doble		double
+#define	no_sign		unsigned
+#define corto		short
+
+
+// #define ejemplo 	example
+// #define parametro 	param
+// #define devuelve	returns
+// #define resumen		brief
+
+/*typedef int entero;				//Se refiere a variables de tipo entero, generalmente estas ocupan entre 4 bytes y 8 bytes, y su rango de valores
 								//varia entre 0 y 65000 aprox si es nosignado.
 
 typedef char caracter;			//Variable de tipo caracter ocupa un byte, y su rango de valores varia entre 0 y 255 si es nosignado.
 
 typedef void nada;
 
-typedef	long int l_entero;		//Es una variable larga entera, se la utiliza por si el rango de valores de las variables entero no alcanza.
+typedef	long largo;
 
 typedef float flotante;
-typedef double doblef;
-typedef long double l_doblef;
-typedef unsigned int entero_no;
-typedef unsigned char caracter_no;
-typedef short int c_entero;
+typedef double doble;
+typedef unsigned no_sign;
+typedef short corto;*/
 
 #endif
