@@ -267,6 +267,7 @@ Library to start writing code in Spanish.
 
 SpanishArduino is a library to learn programming on Arduino without knowing english.
 
+```
 Copyright (C) 2018  Ian Cruz Diaz
 
 This program is free software: you can redistribute it and/or modify
@@ -281,5 +282,6 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
+```
 
 **Contacto:**   idiaz@itba.edu.ar
